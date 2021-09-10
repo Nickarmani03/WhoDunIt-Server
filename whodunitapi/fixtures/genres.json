@@ -1,0 +1,44 @@
+[
+    {
+        "model": "whodunitapi.genre",
+        "pk": 1,
+        "fields": {
+            "label": "Thriller"
+        }
+    },
+    {
+        "model": "whodunitapi.genre",
+        "pk": 2,
+        "fields": {
+            "label": "Horror"
+        }
+    },
+    {
+        "model": "whodunitapi.genre",
+        "pk": 3,
+        "fields": {
+            "label": "Mystery"
+        }
+    },
+    {
+        "model": "whodunitapi.genre",
+        "pk": 4,
+        "fields": {
+            "label": "Crime Thriller"
+        }
+    },
+    {
+        "model": "whodunitapi.genre",
+        "pk": 5,
+        "fields": {
+            "label": "Psychological Thriller"
+        }
+    },
+    {
+        "model": "whodunitapi.genre",
+        "pk": 6,
+        "fields": {
+            "label": "Light Animated Crime"
+        }
+    }
+]
