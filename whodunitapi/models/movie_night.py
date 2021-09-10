@@ -18,5 +18,5 @@ class MovieNight(models.Model):
     time = models.TimeField()
     title = models.CharField(max_length=1000)
     description = models.TextField()    
-    attendees = models.ManyToManyField("Player", through="MovieNight", related_name="attending")
+    # attendees = models.ManyToManyField("Player", through="MovieNight", related_name="attending")
     # this is a list
