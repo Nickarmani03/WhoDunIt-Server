@@ -1,0 +1,92 @@
+[
+    {
+        "model": "whodunitapi.suspect",
+        "pk": 1,
+        "fields": {
+            "name": "Eddie Valiant",
+            "is_guilty": false,
+            "description": "detective"
+        }
+    },
+    {
+        "model": "whodunitapi.suspect",
+        "pk": 2,
+        "fields": {
+            "name": "Roger Rabbit",
+            "is_guilty": false,
+            "description": "main character"
+        }
+    },
+    {
+        "model": "whodunitapi.suspect",
+        "pk": 3,
+        "fields": {
+            "name": "Judge Doom",
+            "is_guilty": true,
+            "description": "guilty"
+        }
+    },
+    {
+        "model": "whodunitapi.suspect",
+        "pk": 4,
+        "fields": {
+            "name": "Jessica Rabbit",
+            "is_guilty": false,
+            "description": "girlfriend"
+        }
+    },
+    {
+        "model": "whodunitapi.suspect",
+        "pk": 5,
+        "fields": {
+            "name": "Dolores",
+            "is_guilty": false,
+            "description": "Valients girlfriend"
+        }
+    },
+    {
+        "model": "whodunitapi.suspect",
+        "pk": 6,
+        "fields": {
+            "name": "Judy Hopps",
+            "is_guilty": false,
+            "description": "Officer"
+        }
+    },
+    {
+        "model": "whodunitapi.suspect",
+        "pk": 7,
+        "fields": {
+            "name": "Nick Wilde",
+            "is_guilty": false,
+            "description": "Grifter"
+        }
+    },
+    {
+        "model": "whodunitapi.suspect",
+        "pk": 8,
+        "fields": {
+            "name": "Emmitt Otterton",
+            "is_guilty": false,
+            "description": "Husband on the Nighthowlers"
+        }
+    },
+    {
+        "model": "whodunitapi.suspect",
+        "pk": 9,
+        "fields": {
+            "name": "Bellwether",
+            "is_guilty": true,
+            "description": "Assistant to the Mayor"
+        }
+    },
+    {
+        "model": "whodunitapi.suspect",
+        "pk": 10,
+        "fields": {
+            "name": "Chief Bogo",
+            "is_guilty": false,
+            "description": "Chief of Police"
+        }
+    }
+]

@@ -5,4 +5,12 @@
         "--load-plugins=pylint_django",
         "--django-settings-module=whodunit-server.settings",
     ],
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "whodunit",
+            "database": "whodunit.sql"
+        }
+    ],
 }
