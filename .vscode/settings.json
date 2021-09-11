@@ -1,6 +1,6 @@
 {
-    "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,    
     "python.linting.pylintArgs": [
         "--load-plugins=pylint_django",
         "--django-settings-module=whodunit-server.settings",
@@ -8,9 +8,9 @@
     "sqltools.connections": [
         {
             "previewLimit": 50,
-            "driver": "SQLite",
+            "driver": "SQLite",            
             "name": "whodunit",
-            "database": "whodunit.sql"
+            "database": "db.sqlite3"
         }
-    ],
+    ]
 }

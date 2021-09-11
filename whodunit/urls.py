@@ -13,17 +13,22 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from whodunitapi.views.genre import GenreView
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
 from django.urls import path
-from whodunitapi.views import register_user, login_user
+from whodunitapi.views import register_user, login_user, GenreView
+from rest_framework import routers
 
-
+# If any client submits a GET request to either one of those URLs, you need to clearly state that the ViewSet will handle the request.
+router = routers.DefaultRouter(trailing_slash=False)
+router.register(r'genres', GenreView, 'genre')
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include(router.urls)),
 
     # Requests to http://localhost:8000/register will be routed to the register_user function
     path('register', register_user),
