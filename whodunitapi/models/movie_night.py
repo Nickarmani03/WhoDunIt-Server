@@ -17,6 +17,8 @@ class MovieNight(models.Model):
     date = models.DateField()
     time = models.TimeField()
     title = models.CharField(max_length=1000)
-    description = models.TextField()    
+    description = models.TextField()
+    # suspects = models.ForeignKey("Suspect", on_delete=models.CASCADE)
+
     # attendees = models.ManyToManyField("Player", through="MovieNight", related_name="attending")
     # this is a list
