@@ -9,7 +9,8 @@ class MovieNight(models.Model):
         date (DateField): The date of the Movie Night
         time (TimeFIeld): The time of the Movie Night
         title (CharField): The title of the Movie Night
-        description (TextField): The description of the Movie Night        
+        description (TextField): The description of the Movie Night
+        suspects (ForeignKey): the suspects who were chosen with the Movie Night      
         attendees (ManyToManyField): The movie watchers attending the Movie Night
     """
     creator = models.ForeignKey("Player", on_delete=models.CASCADE)
@@ -18,7 +19,7 @@ class MovieNight(models.Model):
     time = models.TimeField()
     title = models.CharField(max_length=1000)
     description = models.TextField()
-    # suspects = models.ForeignKey("Suspect", on_delete=models.CASCADE)
+    suspect = models.ForeignKey("Suspect", on_delete=models.CASCADE)
 
     # attendees = models.ManyToManyField("Player", through="MovieNight", related_name="attending")
     # this is a list
