@@ -10,9 +10,9 @@ class GenreView(ViewSet):
     """Level up genres"""
 
     def retrieve(self, request, pk=None):
-        """Handle GET requests for single game type
+        """Handle GET requests for single genre
         Returns:
-            Response -- JSON serialized game type
+            Response -- JSON serialized genre
         """
         try:
             genre = Genre.objects.get(pk=pk)
