@@ -7,7 +7,7 @@ from whodunitapi.models import Genre
 
 
 class GenreView(ViewSet):
-    """Level up genres"""
+    """WHODUNIT genres"""
 
     def retrieve(self, request, pk=None):
         """Handle GET requests for single genre
