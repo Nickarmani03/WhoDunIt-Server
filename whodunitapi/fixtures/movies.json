@@ -11,7 +11,7 @@
             "number_of_players": 2,
             "director": "Robert Zemeckis",
             "rating": "PG-13",
-            "suspect": 1
+            "suspect": 3
             
         }
     },
@@ -27,7 +27,7 @@
             "number_of_players": 2,
             "director": "Rich Moore",
             "rating": "PG",
-            "suspect": 6
+            "suspect": 9
         }
     }
 ]
