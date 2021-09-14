@@ -15,11 +15,11 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.urls import path
 from django.conf.urls import include
 from django.urls import path
-from whodunitapi.views import register_user, login_user, GenreView, Profile, MovieView, MovieNightView, SuspectView
 from rest_framework import routers
+from whodunitapi.views import register_user, login_user, GenreView, Profile, MovieView, MovieNightView, SuspectView
+
 
 # If any client submits a GET request to either one of those URLs, you need to clearly state that the ViewSet will handle the request.
 router = routers.DefaultRouter(trailing_slash=False)
@@ -32,6 +32,7 @@ router.register(r'suspect', SuspectView, 'suspect')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    
     path('', include(router.urls)),
 
     # Requests to http://localhost:8000/register will be routed to the register_user function
