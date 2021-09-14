@@ -165,7 +165,7 @@ class MovieSerializer(serializers.ModelSerializer):
     """JSON serializer for movies"""
     class Meta:
         model = Movie
-        fields = ('id', 'name', 'description', 'number_of_players', 'player', 'maker')
+        fields = ('id', 'name', 'description', 'number_of_players', 'player', 'director')
 
 class MovieNightSerializer(serializers.ModelSerializer):
     """JSON serializer for movieNights"""

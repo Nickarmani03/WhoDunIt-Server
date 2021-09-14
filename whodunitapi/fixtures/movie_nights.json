@@ -9,7 +9,8 @@
             "time": "6:00 PM",
             "title": "Catch the Suspect for Kids",
             "description": "Theres a murderer in Toon town, can you catch the suspect?",
-            "suspect": 3       
+            "suspect": 3,
+            "attendees": [1, 2]      
         }
     },
     {
@@ -22,7 +23,8 @@
             "time": "6:00 PM",
             "title": "Kids Night",
             "description": "Clue is one of the oldest and most popular board movies. It is played by two opponents on a checkered board, commonly white and black. The objective of the movie is to capture the opponent's king.",
-            "suspect": 9
+            "suspect": 9,
+            "attendees": [1, 2]
             
         }
     }
