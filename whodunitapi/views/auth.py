@@ -1,14 +1,19 @@
-import json
-from whodunitapi.models.player import Player
-from django.http import HttpResponse
 from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
 from rest_framework.authtoken.models import Token
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.permissions import AllowAny
+from rest_framework.response import Response
+from rest_framework import status
 from django.views.decorators.csrf import csrf_exempt
 from whodunitapi.models import Player
+from django.http import HttpResponse
+import json
 
-
+@api_view(["POST"])
+@permission_classes([AllowAny])
 @csrf_exempt
+
 def login_user(request):
     '''Handles the authentication of a player
     Method arguments:
@@ -24,6 +29,7 @@ def login_user(request):
         username = req_body['username']
         password = req_body['password']
         authenticated_user = authenticate(username=username, password=password)
+        data = {}
 
         # If authentication was successful, respond with their token
         if authenticated_user is not None:
@@ -38,8 +44,10 @@ def login_user(request):
 
             return HttpResponse(data, content_type='application/json')
 
-
+@api_view(["POST"])
+@permission_classes([AllowAny])
 @csrf_exempt
+
 def register_user(request):
     '''Handles the creation of a new player for authentication
     Method arguments:
@@ -74,4 +82,4 @@ def register_user(request):
 
     # Return the token to the client
     data = json.dumps({"token": token.key})
-    return HttpResponse(data, content_type='application/json')
+    return Response(data, status=status.HTTP_201_CREATED)
