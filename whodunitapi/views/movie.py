@@ -9,7 +9,7 @@ from whodunitapi.models import Movie, Genre, Player
 
 
 class MovieView(ViewSet):
-    """Level up movies"""
+    """WHODUNIT movies"""
 
     def create(self, request):
         """Handle POST operations

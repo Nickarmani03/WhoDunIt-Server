@@ -12,7 +12,7 @@ from whodunitapi.models import Movie, MovieNight, Player
 
 
 class MovieNightView(ViewSet):
-    """Level up movieNights"""
+    """WHODUNIT movieNights"""
 
     def create(self, request):
         """Handle POST operations for movie_nights
