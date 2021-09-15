@@ -5,7 +5,7 @@
     "fields": {
       "user": 1,
       "bio": "Me",
-      "profile_image_url": "profile_image_url",
+      "profile_image_url": "https://i.pinimg.com/474x/b1/92/4d/b1924dce177345b5485bb5490ab3441f.jpg",
       "is_admin": false
     }
   },
@@ -15,7 +15,7 @@
     "fields": {
       "user": 2,
       "bio": "Me",
-      "profile_image_url": "profile_image_url",
+      "profile_image_url": "https://sgame.dit.upm.es/pictures/16371.jpg?1619648546/",
       "is_admin": true
     }
   }
