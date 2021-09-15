@@ -1,4 +1,7 @@
 """View module for handling requests about park areas"""
+from django import views
+from whodunitapi.models import *
+
 from django.contrib.auth.models import User #pylint:disable=imported-auth-user
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
@@ -36,13 +39,14 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ('first_name', 'last_name', 'username')
+
 class PlayerSerializer(serializers.ModelSerializer):
     """JSON serializer for players"""
     user = UserSerializer(many=False)
 
     class Meta:
         model = Player
-        fields = ('user', 'bio')
+        fields = ('user', 'bio', 'profile_image_url')
 
 class MovieSerializer(serializers.ModelSerializer):
     """JSON serializer for movies"""
