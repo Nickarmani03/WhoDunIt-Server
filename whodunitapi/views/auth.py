@@ -60,8 +60,7 @@ def register_user(request):
     player = Player.objects.create(
         user=new_user,
         bio=request.data['bio'],
-        profile_image_url=request.data['profile_image_url'],
-        
+        profile_image_url=request.data['profile_image_url']
     )
 
     # Commit the user to the database by saving it
