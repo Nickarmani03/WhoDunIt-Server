@@ -10,7 +10,6 @@ from whodunitapi.models import Player
 
 @api_view(["POST"])
 @permission_classes([AllowAny])
-
 def login_user(request):
     '''Handles the authentication of a player
     Method arguments:
@@ -30,21 +29,21 @@ def login_user(request):
         data = {
             'valid': True,
             'token': token.key
-            }
+        }
+        return Response(data)
+
     else:
         data = {'valid': False}
-
         return Response(data)
+
 
 @api_view(["POST"])
 @permission_classes([AllowAny])
-
 def register_user(request):
     '''Handles the creation of a new player for authentication
     Method arguments:
       request -- The full HTTP request object
     '''
-
 
     # Create a new user by invoking the `create_user` helper method
     # on Django's built-in User model
