@@ -38,7 +38,8 @@ class UserSerializer(serializers.ModelSerializer):
     """JSON serializer for player's related Django user"""
     class Meta:
         model = User
-        fields = ('first_name', 'last_name', 'username')
+        fields = ['first_name', 'last_name', 'email', 'username', 'is_staff']
+
 
 class PlayerSerializer(serializers.ModelSerializer):
     """JSON serializer for players"""
@@ -46,13 +47,13 @@ class PlayerSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Player
-        fields = ('user', 'bio', 'profile_image_url')
+        fields = ['id', 'user', 'profile_image_url', 'bio']
 
 class MovieSerializer(serializers.ModelSerializer):
     """JSON serializer for movies"""
     class Meta:
         model = Movie
-        fields = ('name')
+        fields = ['name']
 
 class MovieNightSerializer(serializers.ModelSerializer):
     """JSON serializer for movie_nights"""
@@ -60,4 +61,4 @@ class MovieNightSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = MovieNight
-        fields = ('id', 'movie', 'description', 'date', 'time')
+        fields = ['id', 'movie', 'description', 'date', 'time']
