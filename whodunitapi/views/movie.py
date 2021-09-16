@@ -5,7 +5,7 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
 from rest_framework import status
-from whodunitapi.models import Movie, Genre, Player
+from whodunitapi.models import Movie, Genre, Player, Suspect
 
 
 class MovieView(ViewSet):
@@ -24,17 +24,24 @@ class MovieView(ViewSet):
         # and set its properties from what was sent in the
         # body of the request from the client.
         movie = Movie()
+        player = Player.objects.get(pk=request.data["playerId"])
         movie.player = player
         movie.name = request.data["name"]
+        movie.year = request.data["year"]
         movie.description = request.data["description"]
         movie.number_of_players = request.data["numberOfPlayers"]
         movie.director = request.data["director"]
+        movie.rating = request.data["rating"]
 
         # Use the Django ORM to get the record from the database
         # whose `id` is what the client passed as the
         # `genreId` in the body of the request.
         genre = Genre.objects.get(pk=request.data["genreId"])
         movie.genre = genre
+
+        suspect = Suspect.objects.get(pk=request.data["suspectId"])
+        movie.suspect = suspect
+        
 
         # Try to save the new movie to the database, then
         # serialize the movie instance as JSON, and send the
@@ -85,13 +92,19 @@ class MovieView(ViewSet):
         # from the database whose primary key is `pk`
         # if  http://localhost:8000/movies/3, the route parameter of 3 becomes the value of the pk parameter below.
         movie = Movie.objects.get(pk=pk)
+        player = Player.objects.get(pk=request.data["playerId"])
+        movie.player = player
         movie.name = request.data["name"]
-        genre = Genre.objects.get(pk=request.data["genreId"])
-        movie.genre = genre
+        movie.year = request.data["year"]
         movie.description = request.data["description"]
         movie.number_of_players = request.data["numberOfPlayers"]
-        movie.player = player
         movie.director = request.data["director"]
+        movie.rating = request.data["rating"]
+        genre = Genre.objects.get(pk=request.data["genreId"])
+        movie.genre = genre
+        
+        suspect = Suspect.objects.get(pk=request.data["suspectId"])
+        movie.suspect = suspect
         movie.save()
 
         # 204 status code means everything worked but the
@@ -126,10 +139,19 @@ class MovieView(ViewSet):
         # Support filtering movies by type
         #    http://localhost:8000/movies?type=1
         #
-        # That URL will retrieve all tabletop movies
+        # That URL will retrieve all movies
+        player = self.request.query_params.get('type', None)
+        if player is not None:
+            movies = movies.filter(player__id=player)
+        
         genre = self.request.query_params.get('type', None)
         if genre is not None:
             movies = movies.filter(genre__id=genre)
+
+        suspect = self.request.query_params.get('type', None)
+        if suspect is not None:
+            movies = movies.filter(suspect__id=suspect)
+
 
         serializer = MovieSerializer(
             movies, many=True, context={'request': request})
@@ -142,5 +164,5 @@ class MovieSerializer(serializers.ModelSerializer):
     """
     class Meta:
         model = Movie
-        fields = ('id', 'name', 'genre', 'description', 'number_of_players', 'director' )
+        fields = ('id', 'name', 'year', 'player', 'genre', 'description', 'rating','number_of_players', 'director', 'suspect' )
         depth = 1
