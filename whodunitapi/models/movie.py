@@ -22,3 +22,4 @@ class Movie(models.Model):
     director = models.CharField(max_length=50)
     rating = models.CharField(max_length=6)
     suspect = models.ForeignKey("Suspect", on_delete=models.CASCADE)
+    movie_image_url = models.CharField(max_length=255)

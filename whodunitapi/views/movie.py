@@ -24,7 +24,6 @@ class MovieView(ViewSet):
         # and set its properties from what was sent in the
         # body of the request from the client.
         movie = Movie()
-        player = Player.objects.get(pk=request.data["playerId"])
         movie.player = player
         movie.name = request.data["name"]
         movie.year = request.data["year"]
@@ -41,6 +40,7 @@ class MovieView(ViewSet):
 
         suspect = Suspect.objects.get(pk=request.data["suspectId"])
         movie.suspect = suspect
+        movie.movie_image_url = request.data["movieImageUrl"]
         
 
         # Try to save the new movie to the database, then
@@ -92,7 +92,6 @@ class MovieView(ViewSet):
         # from the database whose primary key is `pk`
         # if  http://localhost:8000/movies/3, the route parameter of 3 becomes the value of the pk parameter below.
         movie = Movie.objects.get(pk=pk)
-        player = Player.objects.get(pk=request.data["playerId"])
         movie.player = player
         movie.name = request.data["name"]
         movie.year = request.data["year"]
@@ -101,10 +100,10 @@ class MovieView(ViewSet):
         movie.director = request.data["director"]
         movie.rating = request.data["rating"]
         genre = Genre.objects.get(pk=request.data["genreId"])
-        movie.genre = genre
-        
+        movie.genre = genre        
         suspect = Suspect.objects.get(pk=request.data["suspectId"])
         movie.suspect = suspect
+        movie.movie_image_url = request.data["movie_image_url"]
         movie.save()
 
         # 204 status code means everything worked but the
@@ -157,6 +156,8 @@ class MovieView(ViewSet):
             movies, many=True, context={'request': request})
         return Response(serializer.data)
 
+
+
 class MovieSerializer(serializers.ModelSerializer):
     """JSON serializer for movies
     Arguments:
@@ -164,5 +165,5 @@ class MovieSerializer(serializers.ModelSerializer):
     """
     class Meta:
         model = Movie
-        fields = ('id', 'name', 'year', 'player', 'genre', 'description', 'rating','number_of_players', 'director', 'suspect' )
+        fields = ('id', 'name', 'year', 'player', 'genre', 'description', 'rating','number_of_players', 'director', 'suspect', 'movie_image_url')
         depth = 1

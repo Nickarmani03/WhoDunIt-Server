@@ -13,9 +13,6 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.conf import settings
-from django.conf.urls.static import static
-
 from django.contrib import admin
 from django.conf.urls import include
 from django.urls import path
@@ -36,16 +33,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     
     path('', include(router.urls)),
-
-    # path('accounts', include('registration.backends.default.urls')),
-
-    # path('', include('social.apps.django_app.urls', namespace='social')),
-
-    # path('Blog', include('Blog.urls')),
-
-    # path('growth', include('growth.urls')),
-
-
     # Requests to http://localhost:8000/register will be routed to the register_user function
     path('register', register_user),
     
@@ -55,7 +42,3 @@ urlpatterns = [
     path('api-auth', include('rest_framework.urls', namespace='rest_framework')),
     
 ]
-
-if settings.DEBUG:
-        urlpatterns += static(settings.MEDIA_URL,
-                              document_root=settings.MEDIA_ROOT)
