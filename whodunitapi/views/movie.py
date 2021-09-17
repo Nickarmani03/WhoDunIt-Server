@@ -166,4 +166,4 @@ class MovieSerializer(serializers.ModelSerializer):
     class Meta:
         model = Movie
         fields = ('id', 'name', 'year', 'player', 'genre', 'description', 'rating','number_of_players', 'director', 'suspect', 'movie_image_url')
-        depth = 1
+        depth = 2
