@@ -103,7 +103,7 @@ class MovieView(ViewSet):
         movie.genre = genre        
         suspect = Suspect.objects.get(pk=request.data["suspectId"])
         movie.suspect = suspect
-        movie.movie_image_url = request.data["movie_image_url"]
+        movie.movie_image_url = request.data["movieImageUrl"]
         movie.save()
 
         # 204 status code means everything worked but the
