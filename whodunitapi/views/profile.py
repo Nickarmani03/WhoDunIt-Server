@@ -1,6 +1,5 @@
 """View module for handling requests about park areas"""
-from django import views
-from whodunitapi.models import *
+
 
 from django.contrib.auth.models import User #pylint:disable=imported-auth-user
 from rest_framework.viewsets import ViewSet
