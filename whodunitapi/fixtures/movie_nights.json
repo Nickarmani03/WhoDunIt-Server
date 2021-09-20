@@ -9,7 +9,6 @@
             "time": "6:00 PM",
             "title": "Catch the Suspect for Kids",
             "description": "Theres a murderer in Toon town, can you catch the suspect?",
-            "suspect": 3,
             "attendees": [1, 2]      
         }
     },
@@ -23,7 +22,6 @@
             "time": "6:00 PM",
             "title": "Kids Night",
             "description": "Zootopia Movie Night & Discussion with your Kids and Families!",
-            "suspect": 9,
             "attendees": [1, 2]
             
         }
