@@ -44,7 +44,7 @@
             "director": "Kenneth Branagh",
             "rating": "PG-13",
             "suspect": 9,
-            "movie_image_url": "https://s3.amazonaws.com/saportakinsta/wp-content/uploads/2017/11/3.jpg"
+            "movie_image_url": "https://images-na.ssl-images-amazon.com/images/I/A1yJJsWiaSL._RI_.jpg"
         }
     },
     {
@@ -76,7 +76,7 @@
             "director": "Jonathan Lynn",
             "rating": "PG",
             "suspect": 9,
-            "movie_image_url": "https://lh3.googleusercontent.com/proxy/WNz8u6_QAaXVvZpM2Mc8D1zyox1rDy5EHFHtAkivZYVNna41nUKjeOKRkVLQdVLcytKmoJgNQO9-lyY3-vhWfiT4S1A6zDY8ktP4POvgeVpanGHcYT2fxTMt0qvuBg"
+            "movie_image_url": "https://prodimage.images-bn.com/pimages/0032429256584_p0_v2_s550x406.jpg"
         }
     },
     {
@@ -124,7 +124,7 @@
             "director": "Shane Black",
             "rating": "R",
             "suspect": 9,
-            "movie_image_url": "https://www.imdb.com/title/tt3799694/mediaviewer/rm3304239617/?ref_=tt_ov_i"
+            "movie_image_url": "https://m.media-amazon.com/images/M/MV5BODNlNmU4MGItMzQwZi00NGQyLWEyZWItYjFkNmI0NWI4NjBhXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg"
         }
     },
     {
@@ -140,7 +140,7 @@
             "director": "Roman Polanski",
             "rating": "R",
             "suspect": 9,
-            "movie_image_url": "https://www.imdb.com/title/tt0071315/mediaviewer/rm880430336/?ref_=tt_ov_i"
+            "movie_image_url": "https://resizing.flixster.com/1OGfgXtw5HyShng5QzUd-Og2Qfw=/ems.ZW1zLXByZC1hc3NldHMvbW92aWVzLzUyNTkwMDNiLWVjZGEtNDAxYy05MmIxLTU3OTM3OGEzZDdlMS53ZWJw"
         }
     },
     {
@@ -156,7 +156,7 @@
             "director": "Robert Altman",
             "rating": "R",
             "suspect": 9,
-            "movie_image_url": "https://www.imdb.com/title/tt0280707/mediaviewer/rm877944576/?ref_=tt_ov_i"
+            "movie_image_url": "https://m.media-amazon.com/images/I/7105UT6X5lL._SL1230_.jpg"
         }
     },
     {
@@ -172,7 +172,7 @@
             "director": "Jake Kasdan",
             "rating": "R",
             "suspect": 9,
-            "movie_image_url": "https://www.imdb.com/title/tt0120906/mediaviewer/rm2544666113/?ref_=tt_ov_i"
+            "movie_image_url": "https://m.media-amazon.com/images/M/MV5BMTU1NzkxMDM4NV5BMl5BanBnXkFtZTYwODY3OTQ5._V1_.jpg"
         }
     },
     {
@@ -188,7 +188,7 @@
             "director": "Rob Letterman",
             "rating": "PG",
             "suspect": 9,
-            "movie_image_url": "https://www.imdb.com/title/tt5884052/mediaviewer/rm2806279168/?ref_=tt_ov_i"
+            "movie_image_url": "https://musicart.xboxlive.com/7/d70e5100-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080"
         }
     },
     {
@@ -204,7 +204,7 @@
             "director": "Guy Ritchie",
             "rating": "PG-13",
             "suspect": 9,
-            "movie_image_url": "https://www.imdb.com/title/tt0988045/mediaviewer/rm4059794944/?ref_=tt_ov_i"
+            "movie_image_url": "https://m.media-amazon.com/images/M/MV5BMTg0NjEwNjUxM15BMl5BanBnXkFtZTcwMzk0MjQ5Mg@@._V1_.jpg"
         }
     },
     {
@@ -220,7 +220,7 @@
             "director": "Rian Johnson",
             "rating": "R",
             "suspect": 9,
-            "movie_image_url": "https://www.imdb.com/title/tt0393109/mediaviewer/rm1455492864/?ref_=tt_ov_i"
+            "movie_image_url": "http://www.hypnogoria.com/images/reviews/brick_DVD_cover.jpg"
         }
     },
     {
@@ -236,14 +236,14 @@
             "director": "David Fincher",
             "rating": "R",
             "suspect": 9,
-            "movie_image_url": "https://www.imdb.com/title/tt1568346/mediaviewer/rm1878306816/?ref_=tt_ov_i"
+            "movie_image_url": "https://m.media-amazon.com/images/M/MV5BMTczNDk4NTQ0OV5BMl5BanBnXkFtZTcwNDAxMDgxNw@@._V1_.jpg"
         }
     },
     {
         "model": "whodunitapi.movie",
         "pk": 16,
         "fields": {
-            "name": "Gone Girl ",
+            "name": "Gone Girl",
             "year": "2014",
             "description": "With his wife's disappearance having become the focus of an intense media circus, a man sees the spotlight turned on him when it's suspected that he may not be innocent.",
             "genre": 6,
@@ -316,7 +316,7 @@
             "director": "Bryan Singer",
             "rating": "R",
             "suspect": 9,
-            "movie_image_url": "https://www.imdb.com/title/tt0114814/mediaviewer/rm1975465472/?ref_=tt_ov_i"
+            "movie_image_url": "https://noirwhale.files.wordpress.com/2013/01/via-yengecvebaykus-tumblr.jpg?w=584"
         }
     },
     {
@@ -332,7 +332,7 @@
             "director": "John Francis Daley & Jonathan Goldstein",
             "rating": "R",
             "suspect": 9,
-            "movie_image_url": "https://www.imdb.com/title/tt2704998/mediaviewer/rm3186446592/?ref_=tt_ov_i"
+            "movie_image_url": "https://m.media-amazon.com/images/M/MV5BMjI3ODkzNDk5MF5BMl5BanBnXkFtZTgwNTEyNjY2NDM@._V1_.jpg"
         }
     },
     {
@@ -348,7 +348,7 @@
             "director": "Steven Spielberg",
             "rating": "PG-13",
             "suspect": 9,
-            "movie_image_url": "https://m.media-amazon.com/images/I/91nHJHhDo6L.jpg"
+            "movie_image_url": "https://m.media-amazon.com/images/M/MV5BZTI3YzZjZjEtMDdjOC00OWVjLTk0YmYtYzI2MGMwZjFiMzBlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
         }
     }
 ]

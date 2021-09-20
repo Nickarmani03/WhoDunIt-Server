@@ -27,6 +27,7 @@ class Profile(ViewSet):
         # Manually construct the JSON structure you want in the response
         profile = {}
         profile["player"] = player.data
+        
         profile["movie_nights"] = movie_nights.data
 
         return Response(profile)
