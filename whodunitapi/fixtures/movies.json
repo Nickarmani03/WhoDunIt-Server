@@ -33,6 +33,21 @@
         "model": "whodunitapi.movie",
         "pk": 3,
         "fields": {
+            "name": "Detective Pikachu",
+            "year": "2019",
+            "description": "In a world where people collect Pokémon to do battle, a boy comes across an intelligent talking Pikachu who seeks to be a detective.",
+            "genre": 6,
+            "player": 2,
+            "number_of_players": 2,
+            "director": "Rob Letterman",
+            "rating": "PG",
+            "movie_image_url": "https://musicart.xboxlive.com/7/d70e5100-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080"
+        }
+    },
+    {
+        "model": "whodunitapi.movie",
+        "pk": 4,
+        "fields": {
             "name": "Murder on the Orient Express",
             "year": "2017",
             "description": "When a murder occurs on the train on which he's travelling, celebrated detective Hercule Poirot is recruited to solve the case.",
@@ -46,7 +61,7 @@
     },
     {
         "model": "whodunitapi.movie",
-        "pk": 4,
+        "pk": 5,
         "fields": {
             "name": "Knives Out",
             "year": "2019",
@@ -61,7 +76,7 @@
     },
     {
         "model": "whodunitapi.movie",
-        "pk": 5,
+        "pk": 6,
         "fields": {
             "name": "Clue",
             "year": "1985",
@@ -76,7 +91,7 @@
     },
     {
         "model": "whodunitapi.movie",
-        "pk": 6,
+        "pk": 7,
         "fields": {
             "name": "Murder on the Orient Express",
             "year": "1974",
@@ -91,7 +106,7 @@
     },
     {
         "model": "whodunitapi.movie",
-        "pk": 7,
+        "pk": 8,
         "fields": {
             "name": "Scream",
             "year": "1996",
@@ -106,7 +121,7 @@
     },
     {
         "model": "whodunitapi.movie",
-        "pk": 8,
+        "pk": 9,
         "fields": {
             "name": "The Nice Guys",
             "year": "2016",
@@ -121,7 +136,7 @@
     },
     {
         "model": "whodunitapi.movie",
-        "pk": 9,
+        "pk": 10,
         "fields": {
             "name": "Chinatown",
             "year": "1974",
@@ -136,7 +151,7 @@
     },
     {
         "model": "whodunitapi.movie",
-        "pk": 10,
+        "pk": 11,
         "fields": {
             "name": "Gosford Park",
             "year": "2001",
@@ -151,7 +166,7 @@
     },
     {
         "model": "whodunitapi.movie",
-        "pk": 11,
+        "pk": 12,
         "fields": {
             "name": "Zero Effect",
             "year": "1998",
@@ -162,21 +177,6 @@
             "director": "Jake Kasdan",
             "rating": "R",
             "movie_image_url": "https://m.media-amazon.com/images/M/MV5BMTU1NzkxMDM4NV5BMl5BanBnXkFtZTYwODY3OTQ5._V1_.jpg"
-        }
-    },
-    {
-        "model": "whodunitapi.movie",
-        "pk": 12,
-        "fields": {
-            "name": "Detective Pikachu",
-            "year": "2019",
-            "description": "In a world where people collect Pokémon to do battle, a boy comes across an intelligent talking Pikachu who seeks to be a detective.",
-            "genre": 6,
-            "player": 2,
-            "number_of_players": 2,
-            "director": "Rob Letterman",
-            "rating": "PG",
-            "movie_image_url": "https://musicart.xboxlive.com/7/d70e5100-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080"
         }
     },
     {
@@ -236,7 +236,7 @@
             "number_of_players": 2,
             "director": "David Fincher",
             "rating": "R",
-            "movie_image_url": "https://www.imdb.com/title/tt2267998/mediaviewer/rm2766521344/?ref_=tt_ov_i"
+            "movie_image_url": "https://www.literarytraveler.com/wp-content/uploads/2015/01/Gone-Girl1.jpg"
         }
     },
     {
@@ -251,7 +251,7 @@
             "number_of_players": 2,
             "director": "Denis Villeneuve",
             "rating": "R",
-            "movie_image_url": "https://www.imdb.com/title/tt1392214/mediaviewer/rm1033886464/?ref_=tt_ov_i"
+            "movie_image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Prisoners2013Poster.jpg/220px-Prisoners2013Poster.jpg"
         }
     },
     {
@@ -266,7 +266,7 @@
             "number_of_players": 2,
             "director": "James Mangold",
             "rating": "R",
-            "movie_image_url": "https://www.imdb.com/title/tt0309698/mediaviewer/rm3443038208/?ref_=tt_ov_i"
+            "movie_image_url": "https://pbs.twimg.com/media/EZoBqAbXgAAXJi7.jpg"
         }
     },
     {
@@ -281,7 +281,7 @@
             "number_of_players": 2,
             "director": "Quentin Tarantino",
             "rating": "R",
-            "movie_image_url": "https://www.imdb.com/title/tt3460252/mediaviewer/rm2736055040/?ref_=tt_ov_i"
+            "movie_image_url": "https://m.media-amazon.com/images/M/MV5BMjA1MTc1NTg5NV5BMl5BanBnXkFtZTgwOTM2MDEzNzE@._V1_.jpg"
         }
     },
     {

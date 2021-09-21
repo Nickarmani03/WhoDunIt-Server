@@ -25,6 +25,7 @@ class SuspectView(ViewSet):
         guilty = Guilty.objects.get(pk=request.data["guiltyId"])
         suspect.guilty = guilty
         movie = Movie.objects.get(pk=request.data["movieId"])
+        suspect.suspect_image_url = request.data["suspectImageUrl"]
         suspect.movie = movie
         
 
@@ -65,6 +66,7 @@ class SuspectView(ViewSet):
         guilty = Guilty.objects.get(pk=request.data["guiltyId"])
         suspect.guilty = guilty
         movie = Movie.objects.get(pk=request.data["movieId"])
+        suspect.suspect_image_url = request.data["suspectImageUrl"]
         suspect.movie = movie
        
         suspect.save()
@@ -125,5 +127,5 @@ class SuspectSerializer(serializers.ModelSerializer):
     """
     class Meta:
         model = Suspect
-        fields = ('id', 'name', 'description', 'guilty', 'movie')
+        fields = ('id', 'name', 'description', 'guilty', 'movie',  'suspect_image_url')
         depth = 2
