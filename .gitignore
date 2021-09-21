@@ -136,3 +136,5 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+/home/armani03/workspace/Capstone/WhoDunIt-server/node_modules
