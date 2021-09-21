@@ -5,8 +5,8 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
 from rest_framework import status
-from whodunitapi.models import Movie, Genre, Player, Suspect
-
+from whodunitapi.models import Movie, Genre, Player
+# , Suspect
 
 class MovieView(ViewSet):
     """WHODUNIT movies"""
@@ -38,8 +38,8 @@ class MovieView(ViewSet):
         genre = Genre.objects.get(pk=request.data["genreId"])
         movie.genre = genre
 
-        suspect = Suspect.objects.get(pk=request.data["suspectId"])
-        movie.suspect = suspect
+        # suspect = Suspect.objects.get(pk=request.data["suspectId"])
+        # movie.suspect = suspect
         movie.movie_image_url = request.data["movieImageUrl"]
         
 
@@ -101,8 +101,8 @@ class MovieView(ViewSet):
         movie.rating = request.data["rating"]
         genre = Genre.objects.get(pk=request.data["genreId"])
         movie.genre = genre        
-        suspect = Suspect.objects.get(pk=request.data["suspectId"])
-        movie.suspect = suspect
+        # suspect = Suspect.objects.get(pk=request.data["suspectId"])
+        # movie.suspect = suspect
         movie.movie_image_url = request.data["movieImageUrl"]
         movie.save()
 
@@ -147,9 +147,9 @@ class MovieView(ViewSet):
         if genre is not None:
             movies = movies.filter(genre__id=genre)
 
-        suspect = self.request.query_params.get('type', None)
-        if suspect is not None:
-            movies = movies.filter(suspect__id=suspect)
+        # suspect = self.request.query_params.get('type', None)
+        # if suspect is not None:
+        #     movies = movies.filter(suspect__id=suspect)
 
 
         serializer = MovieSerializer(
@@ -165,5 +165,6 @@ class MovieSerializer(serializers.ModelSerializer):
     """
     class Meta:
         model = Movie
-        fields = ('id', 'name', 'year', 'player', 'genre', 'description', 'rating','number_of_players', 'director', 'suspect', 'movie_image_url')
+        fields = ('id', 'name', 'year', 'player', 'genre', 'description', 'rating','number_of_players', 'director',  'movie_image_url')
         depth = 2
+# 'suspect',

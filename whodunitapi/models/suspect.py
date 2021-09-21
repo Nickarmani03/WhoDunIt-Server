@@ -6,8 +6,10 @@ class Suspect(models.Model):
     Fields:
         name (CharField): The name of the suspect        
         description (CharField): The description of the movie
-        is_guilty (BooleanField): the suspected criminal is guilty or not
+        guilty (ForeignKey): the suspected criminal is guilty or not
+        movie (ForeignKey): the suspected criminal's movie they are in.
     """
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100)    
+    guilty = models.ForeignKey("Guilty", on_delete=models.CASCADE)
     description = models.CharField(max_length=1000)
-    is_guilty = models.BooleanField()
+    movie = models.ForeignKey("Movie", on_delete=models.CASCADE)

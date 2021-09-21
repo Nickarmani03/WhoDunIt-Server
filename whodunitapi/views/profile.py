@@ -62,3 +62,4 @@ class MovieNightSerializer(serializers.ModelSerializer):
     class Meta:
         model = MovieNight
         fields = ['id', 'movie', 'description', 'date', 'time']
+        depth = 1

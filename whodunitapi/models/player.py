@@ -5,7 +5,7 @@ from django.contrib.auth.models import User #pylint:disable=(imported-auth-user)
 class Player(models.Model):
     """player Model
     Args:
-        models (OneToOneField): The user information for the player
+        user (OneToOneField): The user information for the player
         bio (CharField): The bio of the user
         profile_image_url (CharField): for the user to upload an image.
     """

@@ -4,8 +4,9 @@
         "pk": 1,
         "fields": {
             "name": "Eddie Valiant",
-            "is_guilty": false,
-            "description": "detective"
+            "guilty": 2,
+            "description": "detective",
+            "movie": 1
         }
     },
     {
@@ -13,8 +14,9 @@
         "pk": 2,
         "fields": {
             "name": "Roger Rabbit",
-            "is_guilty": false,
-            "description": "main character"
+            "guilty": 2,
+            "description": "Down on his luck lovable rabbit character",
+            "movie": 1
         }
     },
     {
@@ -22,8 +24,9 @@
         "pk": 3,
         "fields": {
             "name": "Judge Doom",
-            "is_guilty": true,
-            "description": "guilty"
+            "guilty": 1,
+            "description": "Judge in Toon Town",
+            "movie": 1
         }
     },
     {
@@ -31,62 +34,59 @@
         "pk": 4,
         "fields": {
             "name": "Jessica Rabbit",
-            "is_guilty": false,
-            "description": "girlfriend"
+            "guilty": 2,
+            "description": "Roger Rabbit's girlfriend",
+            "movie": 1
         }
     },
     {
         "model": "whodunitapi.suspect",
         "pk": 5,
         "fields": {
-            "name": "Dolores",
-            "is_guilty": false,
-            "description": "Valients girlfriend"
+            "name": "Judy Hopps",
+            "guilty": 2,
+            "description": "The first rabbit officer of the Zootopia Police Department.",
+            "movie": 2
         }
     },
     {
         "model": "whodunitapi.suspect",
         "pk": 6,
         "fields": {
-            "name": "Judy Hopps",
-            "is_guilty": false,
-            "description": "Officer"
+            "name": "Nick Wilde",
+            "guilty": 2,
+            "description": "He is a con-artist fox in the city of Zootopia who finds himself compelled to aid Officer Judy Hopps.",
+            "movie": 2
         }
     },
     {
         "model": "whodunitapi.suspect",
         "pk": 7,
         "fields": {
-            "name": "Nick Wilde",
-            "is_guilty": false,
-            "description": "Grifter"
+            "name": "Emmitt Otterton",
+            "guilty": 2,
+            "description": "The husband of Mrs. Otterton, he goes missing and mysteriously turns savage.",
+            "movie": 2
         }
     },
     {
         "model": "whodunitapi.suspect",
         "pk": 8,
         "fields": {
-            "name": "Emmitt Otterton",
-            "is_guilty": false,
-            "description": "Husband on the Nighthowlers"
+            "name": "Bellwether",
+            "guilty": 1,
+            "description": "Assistant to the Mayor, she is the former friend-turned-arch-nemesis of Judy Hopps.",
+            "movie": 2
         }
     },
     {
         "model": "whodunitapi.suspect",
         "pk": 9,
         "fields": {
-            "name": "Bellwether",
-            "is_guilty": true,
-            "description": "Assistant to the Mayor"
-        }
-    },
-    {
-        "model": "whodunitapi.suspect",
-        "pk": 10,
-        "fields": {
             "name": "Chief Bogo",
-            "is_guilty": false,
-            "description": "Chief of Police"
+            "guilty": 2,
+            "description": "He is a cape buffalo and the chief of the Zootopia Police Department.",
+            "movie": 2
         }
     }
 ]

@@ -11,7 +11,6 @@
             "number_of_players": 2,
             "director": "Robert Zemeckis",
             "rating": "PG-13",
-            "suspect": 3,
             "movie_image_url": "https://m.media-amazon.com/images/I/518K2FK96PL._AC_SY445_.jpg"
         }
     },
@@ -27,7 +26,6 @@
             "number_of_players": 2,
             "director": "Rich Moore",
             "rating": "PG",
-            "suspect": 9,
             "movie_image_url": "https://lumiere-a.akamaihd.net/v1/images/movie_poster_zootopia_866a1bf2.jpeg?region=0%2C0%2C300%2C450"
         }
     },
@@ -43,7 +41,6 @@
             "number_of_players": 2,
             "director": "Kenneth Branagh",
             "rating": "PG-13",
-            "suspect": 9,
             "movie_image_url": "https://images-na.ssl-images-amazon.com/images/I/A1yJJsWiaSL._RI_.jpg"
         }
     },
@@ -59,7 +56,6 @@
             "number_of_players": 2,
             "director": "Rian Johnson",
             "rating": "PG-13",
-            "suspect": 9,
             "movie_image_url": "https://images.fandango.com/ImageRenderer/400/0/redesign/static/img/default_poster.png/0/images/masterrepository/fandango/219390/KO%20-%20Final%20Poster.jpg"
         }
     },
@@ -75,7 +71,6 @@
             "number_of_players": 2,
             "director": "Jonathan Lynn",
             "rating": "PG",
-            "suspect": 9,
             "movie_image_url": "https://prodimage.images-bn.com/pimages/0032429256584_p0_v2_s550x406.jpg"
         }
     },
@@ -91,7 +86,6 @@
             "number_of_players": 2,
             "director": "Sidney Lumet",
             "rating": "PG",
-            "suspect": 9,
             "movie_image_url": "https://www.nordicposters.com/movie-poster/mordet_pa_orientexpressen_74.jpg"
         }
     },
@@ -107,7 +101,6 @@
             "number_of_players": 2,
             "director": "Wes Craven",
             "rating": "R",
-            "suspect": 9,
             "movie_image_url": "https://unfspinnaker.com/wp-content/uploads/2017/10/large_ewi7gYW22t8T3piRvrXO73GlzuL.jpg"
         }
     },
@@ -123,7 +116,6 @@
             "number_of_players": 2,
             "director": "Shane Black",
             "rating": "R",
-            "suspect": 9,
             "movie_image_url": "https://m.media-amazon.com/images/M/MV5BODNlNmU4MGItMzQwZi00NGQyLWEyZWItYjFkNmI0NWI4NjBhXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg"
         }
     },
@@ -139,7 +131,6 @@
             "number_of_players": 2,
             "director": "Roman Polanski",
             "rating": "R",
-            "suspect": 9,
             "movie_image_url": "https://resizing.flixster.com/1OGfgXtw5HyShng5QzUd-Og2Qfw=/ems.ZW1zLXByZC1hc3NldHMvbW92aWVzLzUyNTkwMDNiLWVjZGEtNDAxYy05MmIxLTU3OTM3OGEzZDdlMS53ZWJw"
         }
     },
@@ -155,7 +146,6 @@
             "number_of_players": 2,
             "director": "Robert Altman",
             "rating": "R",
-            "suspect": 9,
             "movie_image_url": "https://m.media-amazon.com/images/I/7105UT6X5lL._SL1230_.jpg"
         }
     },
@@ -171,7 +161,6 @@
             "number_of_players": 2,
             "director": "Jake Kasdan",
             "rating": "R",
-            "suspect": 9,
             "movie_image_url": "https://m.media-amazon.com/images/M/MV5BMTU1NzkxMDM4NV5BMl5BanBnXkFtZTYwODY3OTQ5._V1_.jpg"
         }
     },
@@ -187,7 +176,6 @@
             "number_of_players": 2,
             "director": "Rob Letterman",
             "rating": "PG",
-            "suspect": 9,
             "movie_image_url": "https://musicart.xboxlive.com/7/d70e5100-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080"
         }
     },
@@ -203,7 +191,6 @@
             "number_of_players": 2,
             "director": "Guy Ritchie",
             "rating": "PG-13",
-            "suspect": 9,
             "movie_image_url": "https://m.media-amazon.com/images/M/MV5BMTg0NjEwNjUxM15BMl5BanBnXkFtZTcwMzk0MjQ5Mg@@._V1_.jpg"
         }
     },
@@ -219,7 +206,6 @@
             "number_of_players": 2,
             "director": "Rian Johnson",
             "rating": "R",
-            "suspect": 9,
             "movie_image_url": "http://www.hypnogoria.com/images/reviews/brick_DVD_cover.jpg"
         }
     },
@@ -235,7 +221,6 @@
             "number_of_players": 2,
             "director": "David Fincher",
             "rating": "R",
-            "suspect": 9,
             "movie_image_url": "https://m.media-amazon.com/images/M/MV5BMTczNDk4NTQ0OV5BMl5BanBnXkFtZTcwNDAxMDgxNw@@._V1_.jpg"
         }
     },
@@ -251,7 +236,6 @@
             "number_of_players": 2,
             "director": "David Fincher",
             "rating": "R",
-            "suspect": 9,
             "movie_image_url": "https://www.imdb.com/title/tt2267998/mediaviewer/rm2766521344/?ref_=tt_ov_i"
         }
     },
@@ -267,7 +251,6 @@
             "number_of_players": 2,
             "director": "Denis Villeneuve",
             "rating": "R",
-            "suspect": 9,
             "movie_image_url": "https://www.imdb.com/title/tt1392214/mediaviewer/rm1033886464/?ref_=tt_ov_i"
         }
     },
@@ -283,7 +266,6 @@
             "number_of_players": 2,
             "director": "James Mangold",
             "rating": "R",
-            "suspect": 9,
             "movie_image_url": "https://www.imdb.com/title/tt0309698/mediaviewer/rm3443038208/?ref_=tt_ov_i"
         }
     },
@@ -299,7 +281,6 @@
             "number_of_players": 2,
             "director": "Quentin Tarantino",
             "rating": "R",
-            "suspect": 9,
             "movie_image_url": "https://www.imdb.com/title/tt3460252/mediaviewer/rm2736055040/?ref_=tt_ov_i"
         }
     },
@@ -315,7 +296,6 @@
             "number_of_players": 2,
             "director": "Bryan Singer",
             "rating": "R",
-            "suspect": 9,
             "movie_image_url": "https://noirwhale.files.wordpress.com/2013/01/via-yengecvebaykus-tumblr.jpg?w=584"
         }
     },
@@ -331,7 +311,6 @@
             "number_of_players": 2,
             "director": "John Francis Daley & Jonathan Goldstein",
             "rating": "R",
-            "suspect": 9,
             "movie_image_url": "https://m.media-amazon.com/images/M/MV5BMjI3ODkzNDk5MF5BMl5BanBnXkFtZTgwNTEyNjY2NDM@._V1_.jpg"
         }
     },
@@ -347,7 +326,6 @@
             "number_of_players": 2,
             "director": "Steven Spielberg",
             "rating": "PG-13",
-            "suspect": 9,
             "movie_image_url": "https://m.media-amazon.com/images/M/MV5BZTI3YzZjZjEtMDdjOC00OWVjLTk0YmYtYzI2MGMwZjFiMzBlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
         }
     }
