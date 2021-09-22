@@ -12,3 +12,4 @@ python3 manage.py loaddata genres
 python3 manage.py loaddata movies
 python3 manage.py loaddata suspects
 python3 manage.py loaddata movie_nights
+python3 manage.py loaddata movie_suspects

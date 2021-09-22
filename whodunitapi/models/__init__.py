@@ -5,3 +5,4 @@ from .night_player import NightPlayer
 from .player import Player
 from .suspect import Suspect
 from .guilty import Guilty
+from .movie_suspect import MovieSuspect

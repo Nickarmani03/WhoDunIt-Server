@@ -6,7 +6,7 @@ from rest_framework.response import Response
 from rest_framework import serializers
 from rest_framework import status
 from whodunitapi.models import Movie, Genre, Player
-# , Suspect
+
 
 class MovieView(ViewSet):
     """WHODUNIT movies"""
@@ -38,14 +38,14 @@ class MovieView(ViewSet):
         genre = Genre.objects.get(pk=request.data["genreId"])
         movie.genre = genre
 
-        # suspect = Suspect.objects.get(pk=request.data["suspectId"])
-        # movie.suspect = suspect
         movie.movie_image_url = request.data["movieImageUrl"]
         
 
         # Try to save the new movie to the database, then
         # serialize the movie instance as JSON, and send the
         # JSON as a response to the client request
+        #JSON is a format that encodes objects in a string. Serialization means to convert an object into that string
+        #Serialization is the process of converting an object into a stream of bytes to store the object or transmit it to memory, a database or file. Its main purpose is to save the state of an object in order to be able to recreate it when needed.
         try:
             movie.save()
             serializer = MovieSerializer(movie, context={'request': request})
@@ -86,6 +86,8 @@ class MovieView(ViewSet):
             Response -- Empty body with 204 no content status code
         """
         player = Player.objects.get(user=request.auth.user)
+        #all authorized users get access to all players objects
+        #checks the whole object to see if the user is authorized.
 
         # Do mostly the same thing as POST, but instead of
         # creating a new instance of Movie, get the movie record
@@ -101,8 +103,6 @@ class MovieView(ViewSet):
         movie.rating = request.data["rating"]
         genre = Genre.objects.get(pk=request.data["genreId"])
         movie.genre = genre        
-        # suspect = Suspect.objects.get(pk=request.data["suspectId"])
-        # movie.suspect = suspect
         movie.movie_image_url = request.data["movieImageUrl"]
         movie.save()
 
@@ -147,14 +147,11 @@ class MovieView(ViewSet):
         if genre is not None:
             movies = movies.filter(genre__id=genre)
 
-        # suspect = self.request.query_params.get('type', None)
-        # if suspect is not None:
-        #     movies = movies.filter(suspect__id=suspect)
-
-
         serializer = MovieSerializer(
             movies, many=True, context={'request': request})
         return Response(serializer.data)
+        # so this can return an array of many so it needs to be true. if it one it would be false
+
 
 
 
@@ -167,4 +164,3 @@ class MovieSerializer(serializers.ModelSerializer):
         model = Movie
         fields = ('id', 'name', 'year', 'player', 'genre', 'description', 'rating','number_of_players', 'director',  'movie_image_url')
         depth = 2
-# 'suspect',

@@ -97,12 +97,6 @@ class SuspectView(ViewSet):
             Response -- JSON serialized list of suspects
         """
         suspects = Suspect.objects.all()
-
-
-        # movie = self.request.query_params.get('movie', None)  # <<not sure about 'movie' here
-        # if movie is not None:
-        #     suspect = suspect.filter(movie__id=movie)
-
         player = self.request.query_params.get('type', None)
         if player is not None:
             suspects = suspects.filter(player__id=player)

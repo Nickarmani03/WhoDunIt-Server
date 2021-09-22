@@ -8,11 +8,11 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
 from whodunitapi.models import Movie, MovieNight, Player
-# from whodunitapi.views.movie import MovieSerializer
+
 
 
 class MovieNightView(ViewSet):
-    """WHODUNIT movieNights"""
+    """WHODUNIT MovieNights"""
 
     def create(self, request):
         """Handle POST operations for movie_nights
