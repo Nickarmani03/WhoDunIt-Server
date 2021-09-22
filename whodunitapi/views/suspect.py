@@ -4,7 +4,7 @@ from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
-from whodunitapi.models import Suspect
+from whodunitapi.models import Suspect, Guilty, Player, Movie
 
 class SuspectView(ViewSet):
     """WHODUNIT Suspects"""
@@ -16,12 +16,17 @@ class SuspectView(ViewSet):
         """
 
         # Uses the token passed in the `Authorization` header
+        player = Player.objects.get(user=request.auth.user)
         
         suspect = Suspect()
+        suspect.player = player
         suspect.name = request.data["name"]
-        suspect.is_guilty = request.data["isGuilty"]
         suspect.description = request.data["description"]
-        
+        guilty = Guilty.objects.get(pk=request.data["guiltyId"])
+        suspect.guilty = guilty
+        movie = Movie.objects.get(pk=request.data["movieId"])
+        suspect.suspect_image_url = request.data["suspectImageUrl"]
+        suspect.movie = movie
         
 
         try:
@@ -53,20 +58,21 @@ class SuspectView(ViewSet):
         Returns:
             Response -- Empty body with 204 status code
         """
-        
-        suspect = Suspect()
-        suspect.name = request.data["name"]        
-        suspect.is_guilty = request.data["isGuilty"]
+        player = Player.objects.get(user=request.auth.user)
+        suspect = Suspect.objects.get(pk=pk)
+        suspect.player = player
+        suspect.name = request.data["name"]
         suspect.description = request.data["description"]
-        # suspect.movie = request.data["movie"]
-        
-
-        # movie = Movie.objects.get(pk=request.data["movieId"])
-        # suspect.movie = movie
+        guilty = Guilty.objects.get(pk=request.data["guiltyId"])
+        suspect.guilty = guilty
+        movie = Movie.objects.get(pk=request.data["movieId"])
+        suspect.suspect_image_url = request.data["suspectImageUrl"]
+        suspect.movie = movie
+       
         suspect.save()
 
 
-        return Response({}, status=status.HTTP_204_NO_NAME)
+        return Response({}, status=status.HTTP_204_NO_CONTENT)
 
     def destroy(self, request, pk=None):
         """Handle DELETE requests for a single suspect
@@ -97,6 +103,19 @@ class SuspectView(ViewSet):
         # if movie is not None:
         #     suspect = suspect.filter(movie__id=movie)
 
+        player = self.request.query_params.get('type', None)
+        if player is not None:
+            suspects = suspects.filter(player__id=player)
+
+        guilty = self.request.query_params.get('type', None)
+        if guilty is not None:
+            suspects = suspects.filter(guilty__id=guilty)
+        
+        movie = self.request.query_params.get('type', None)
+        if movie is not None:
+            suspects = suspects.filter(movie__id=movie)
+
+
         serializer = SuspectSerializer(
             suspects, many=True, context={'request': request})
         return Response(serializer.data)
@@ -108,5 +127,5 @@ class SuspectSerializer(serializers.ModelSerializer):
     """
     class Meta:
         model = Suspect
-        fields = ('id', 'name', 'is_guilty')
-        # depth = 1
+        fields = ('id', 'name', 'description', 'guilty', 'movie',  'suspect_image_url')
+        depth = 2

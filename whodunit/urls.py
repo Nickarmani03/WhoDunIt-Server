@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.conf.urls import include
 from django.urls import path
 from rest_framework import routers
-from whodunitapi.views import register_user, login_user, GenreView, Profile, MovieView, MovieNightView, SuspectView, Landing
+from whodunitapi.views import register_user, login_user, GenreView, Profile, MovieView, MovieNightView, SuspectView, GuiltyView, Landing
 
 
 # If any client submits a GET request to either one of those URLs, you need to clearly state that the ViewSet will handle the request.
@@ -27,6 +27,7 @@ router.register(r'profile', Profile, 'profile')
 router.register(r'movie', MovieView, 'movie')
 router.register(r'movie_night', MovieNightView, 'movie_night')
 router.register(r'suspect', SuspectView, 'suspect')
+router.register(r'guilty', GuiltyView, 'guilty')
 router.register(r'landing', Landing, 'landing')
 
 

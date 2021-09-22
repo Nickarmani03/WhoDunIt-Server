@@ -1,0 +1,16 @@
+[
+    {
+        "model": "whodunitapi.guilty",
+        "pk": 1,
+        "fields": {
+            "label": "Yes"
+        }
+    },
+    {
+        "model": "whodunitapi.guilty",
+        "pk": 2,
+        "fields": {
+            "label": "No"
+        }
+    }
+]

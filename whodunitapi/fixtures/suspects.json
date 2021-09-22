@@ -4,8 +4,10 @@
         "pk": 1,
         "fields": {
             "name": "Eddie Valiant",
-            "is_guilty": false,
-            "description": "detective"
+            "guilty": 2,
+            "description": "detective",
+            "movie": 1,
+            "suspect_image_url": "https://upload.wikimedia.org/wikipedia/en/7/76/Eddie-Valiant.jpg"
         }
     },
     {
@@ -13,8 +15,10 @@
         "pk": 2,
         "fields": {
             "name": "Roger Rabbit",
-            "is_guilty": false,
-            "description": "main character"
+            "guilty": 2,
+            "description": "Down on his luck lovable rabbit character",
+            "movie": 1,
+            "suspect_image_url": "https://m.media-amazon.com/images/I/91-0Cx7SH+L._SL1500_.jpg"
         }
     },
     {
@@ -22,8 +26,10 @@
         "pk": 3,
         "fields": {
             "name": "Judge Doom",
-            "is_guilty": true,
-            "description": "guilty"
+            "guilty": 1,
+            "description": "Judge in Toon Town",
+            "movie": 1,
+            "suspect_image_url": "https://www.hollywoodreporter.com/wp-content/uploads/2020/05/wfrr_rrc_4_l-h_2020.jpg?w=681&h=383&crop=1"
         }
     },
     {
@@ -31,62 +37,65 @@
         "pk": 4,
         "fields": {
             "name": "Jessica Rabbit",
-            "is_guilty": false,
-            "description": "girlfriend"
+            "guilty": 2,
+            "description": "Roger Rabbit's girlfriend",
+            "movie": 1,
+            "suspect_image_url": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/who-framed-roger-rabbit-bo-kev.jpg"
         }
     },
     {
         "model": "whodunitapi.suspect",
         "pk": 5,
         "fields": {
-            "name": "Dolores",
-            "is_guilty": false,
-            "description": "Valients girlfriend"
+            "name": "Judy Hopps",
+            "guilty": 2,
+            "description": "The first rabbit officer of the Zootopia Police Department.",
+            "movie": 2,
+            "suspect_image_url": "https://movies-b26f.kxcdn.com/wp-content/uploads/2016/03/Zootopia56554cc533bea-1-1024x1024.jpg"
         }
     },
     {
         "model": "whodunitapi.suspect",
         "pk": 6,
         "fields": {
-            "name": "Judy Hopps",
-            "is_guilty": false,
-            "description": "Officer"
+            "name": "Nick Wilde",
+            "guilty": 2,
+            "description": "He is a con-artist fox in the city of Zootopia who finds himself compelled to aid Officer Judy Hopps.",
+            "movie": 2,
+            "suspect_image_url": "https://static.turbosquid.com/Preview/2016/06/16__02_38_16/nickFengmian.jpg32627351-4aa2-466d-8590-aba5c76cb73aLarge.jpg"
         }
     },
     {
         "model": "whodunitapi.suspect",
         "pk": 7,
         "fields": {
-            "name": "Nick Wilde",
-            "is_guilty": false,
-            "description": "Grifter"
+            "name": "Emmitt Otterton",
+            "guilty": 2,
+            "description": "The husband of Mrs. Otterton, he goes missing and mysteriously turns savage.",
+            "movie": 2,
+            "suspect_image_url": "https://cdnb.artstation.com/p/assets/images/images/028/189/433/medium/jayson-houdet-jscreenshot007.jpg?1596213351"
         }
     },
     {
         "model": "whodunitapi.suspect",
         "pk": 8,
         "fields": {
-            "name": "Emmitt Otterton",
-            "is_guilty": false,
-            "description": "Husband on the Nighthowlers"
+            "name": "Bellwether",
+            "guilty": 1,
+            "description": "Assistant to the Mayor, she is the former friend-turned-arch-nemesis of Judy Hopps.",
+            "movie": 2,
+            "suspect_image_url": "https://pbs.twimg.com/profile_images/696123652237103104/6QwCckQ1.png"
         }
     },
     {
         "model": "whodunitapi.suspect",
         "pk": 9,
         "fields": {
-            "name": "Bellwether",
-            "is_guilty": true,
-            "description": "Assistant to the Mayor"
-        }
-    },
-    {
-        "model": "whodunitapi.suspect",
-        "pk": 10,
-        "fields": {
             "name": "Chief Bogo",
-            "is_guilty": false,
-            "description": "Chief of Police"
+            "guilty": 2,
+            "description": "He is a cape buffalo and the chief of the Zootopia Police Department.",
+            "movie": 2,
+            "suspect_image_url": "http://images6.fanpop.com/image/photos/39200000/Chief-Bogo-disneys-zootopia-39264073-600-600.jpg"
         }
     }
 ]

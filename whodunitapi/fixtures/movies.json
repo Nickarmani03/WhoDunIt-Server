@@ -11,7 +11,6 @@
             "number_of_players": 2,
             "director": "Robert Zemeckis",
             "rating": "PG-13",
-            "suspect": 3,
             "movie_image_url": "https://m.media-amazon.com/images/I/518K2FK96PL._AC_SY445_.jpg"
         }
     },
@@ -27,157 +26,12 @@
             "number_of_players": 2,
             "director": "Rich Moore",
             "rating": "PG",
-            "suspect": 9,
             "movie_image_url": "https://lumiere-a.akamaihd.net/v1/images/movie_poster_zootopia_866a1bf2.jpeg?region=0%2C0%2C300%2C450"
         }
     },
     {
         "model": "whodunitapi.movie",
         "pk": 3,
-        "fields": {
-            "name": "Murder on the Orient Express",
-            "year": "2017",
-            "description": "When a murder occurs on the train on which he's travelling, celebrated detective Hercule Poirot is recruited to solve the case.",
-            "genre": 6,
-            "player": 1,
-            "number_of_players": 2,
-            "director": "Kenneth Branagh",
-            "rating": "PG-13",
-            "suspect": 9,
-            "movie_image_url": "https://images-na.ssl-images-amazon.com/images/I/A1yJJsWiaSL._RI_.jpg"
-        }
-    },
-    {
-        "model": "whodunitapi.movie",
-        "pk": 4,
-        "fields": {
-            "name": "Knives Out",
-            "year": "2019",
-            "description": "A detective investigates the death of a patriarch of an eccentric, combative family.",
-            "genre": 6,
-            "player": 1,
-            "number_of_players": 2,
-            "director": "Rian Johnson",
-            "rating": "PG-13",
-            "suspect": 9,
-            "movie_image_url": "https://images.fandango.com/ImageRenderer/400/0/redesign/static/img/default_poster.png/0/images/masterrepository/fandango/219390/KO%20-%20Final%20Poster.jpg"
-        }
-    },
-    {
-        "model": "whodunitapi.movie",
-        "pk": 5,
-        "fields": {
-            "name": "Clue",
-            "year": "1985",
-            "description": "Six guests are anonymously invited to a strange mansion for dinner, but after their host is killed, they must cooperate with the staff to identify the murderer as the bodies pile up",
-            "genre": 6,
-            "player": 2,
-            "number_of_players": 2,
-            "director": "Jonathan Lynn",
-            "rating": "PG",
-            "suspect": 9,
-            "movie_image_url": "https://prodimage.images-bn.com/pimages/0032429256584_p0_v2_s550x406.jpg"
-        }
-    },
-    {
-        "model": "whodunitapi.movie",
-        "pk": 6,
-        "fields": {
-            "name": "Murder on the Orient Express",
-            "year": "1974",
-            "description": "In December 1935, when his train is stopped by deep snow, detective Hercule Poirot is called on to solve a murder that occurred in his car the night before.",
-            "genre": 6,
-            "player": 2,
-            "number_of_players": 2,
-            "director": "Sidney Lumet",
-            "rating": "PG",
-            "suspect": 9,
-            "movie_image_url": "https://www.nordicposters.com/movie-poster/mordet_pa_orientexpressen_74.jpg"
-        }
-    },
-    {
-        "model": "whodunitapi.movie",
-        "pk": 7,
-        "fields": {
-            "name": "Scream",
-            "year": "1996",
-            "description": "A year after the murder of her mother, a teenage girl is terrorized by a new killer, who targets the girl and her friends by using horror films as part of a deadly game.",
-            "genre": 6,
-            "player": 1,
-            "number_of_players": 2,
-            "director": "Wes Craven",
-            "rating": "R",
-            "suspect": 9,
-            "movie_image_url": "https://unfspinnaker.com/wp-content/uploads/2017/10/large_ewi7gYW22t8T3piRvrXO73GlzuL.jpg"
-        }
-    },
-    {
-        "model": "whodunitapi.movie",
-        "pk": 8,
-        "fields": {
-            "name": "The Nice Guys",
-            "year": "2016",
-            "description": "In 1970s Los Angeles, a mismatched pair of private eyes investigate a missing girl and the mysterious death of a porn star.",
-            "genre": 6,
-            "player": 1,
-            "number_of_players": 2,
-            "director": "Shane Black",
-            "rating": "R",
-            "suspect": 9,
-            "movie_image_url": "https://m.media-amazon.com/images/M/MV5BODNlNmU4MGItMzQwZi00NGQyLWEyZWItYjFkNmI0NWI4NjBhXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg"
-        }
-    },
-    {
-        "model": "whodunitapi.movie",
-        "pk": 9,
-        "fields": {
-            "name": "Chinatown",
-            "year": "1974",
-            "description": "A private detective hired to expose an adulterer finds himself caught up in a web of deceit, corruption, and murder.",
-            "genre": 6,
-            "player": 1,
-            "number_of_players": 2,
-            "director": "Roman Polanski",
-            "rating": "R",
-            "suspect": 9,
-            "movie_image_url": "https://resizing.flixster.com/1OGfgXtw5HyShng5QzUd-Og2Qfw=/ems.ZW1zLXByZC1hc3NldHMvbW92aWVzLzUyNTkwMDNiLWVjZGEtNDAxYy05MmIxLTU3OTM3OGEzZDdlMS53ZWJw"
-        }
-    },
-    {
-        "model": "whodunitapi.movie",
-        "pk": 10,
-        "fields": {
-            "name": "Gosford Park",
-            "year": "2001",
-            "description": "Set in the 1930s, this movie brings a group of pretentious rich and famous together for a weekend of relaxation at a hunting resort. But when a murder occurs, each one of these interesting characters becomes a suspect.",
-            "genre": 6,
-            "player": 1,
-            "number_of_players": 2,
-            "director": "Robert Altman",
-            "rating": "R",
-            "suspect": 9,
-            "movie_image_url": "https://m.media-amazon.com/images/I/7105UT6X5lL._SL1230_.jpg"
-        }
-    },
-    {
-        "model": "whodunitapi.movie",
-        "pk": 11,
-        "fields": {
-            "name": "Zero Effect",
-            "year": "1998",
-            "description": "The world's greatest detective Daryl Zero aided by his associate Steve Arlo investigates a complex and mysterious case of blackmail and missing keys for shady tycoon Gregory Stark who is less than forthcoming about what is really happening!",
-            "genre": 6,
-            "player": 1,
-            "number_of_players": 2,
-            "director": "Jake Kasdan",
-            "rating": "R",
-            "suspect": 9,
-            "movie_image_url": "https://m.media-amazon.com/images/M/MV5BMTU1NzkxMDM4NV5BMl5BanBnXkFtZTYwODY3OTQ5._V1_.jpg"
-        }
-    },
-    {
-        "model": "whodunitapi.movie",
-        "pk": 12,
         "fields": {
             "name": "Detective Pikachu",
             "year": "2019",
@@ -187,8 +41,142 @@
             "number_of_players": 2,
             "director": "Rob Letterman",
             "rating": "PG",
-            "suspect": 9,
             "movie_image_url": "https://musicart.xboxlive.com/7/d70e5100-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080"
+        }
+    },
+    {
+        "model": "whodunitapi.movie",
+        "pk": 4,
+        "fields": {
+            "name": "Murder on the Orient Express",
+            "year": "2017",
+            "description": "When a murder occurs on the train on which he's travelling, celebrated detective Hercule Poirot is recruited to solve the case.",
+            "genre": 6,
+            "player": 1,
+            "number_of_players": 2,
+            "director": "Kenneth Branagh",
+            "rating": "PG-13",
+            "movie_image_url": "https://images-na.ssl-images-amazon.com/images/I/A1yJJsWiaSL._RI_.jpg"
+        }
+    },
+    {
+        "model": "whodunitapi.movie",
+        "pk": 5,
+        "fields": {
+            "name": "Knives Out",
+            "year": "2019",
+            "description": "A detective investigates the death of a patriarch of an eccentric, combative family.",
+            "genre": 6,
+            "player": 1,
+            "number_of_players": 2,
+            "director": "Rian Johnson",
+            "rating": "PG-13",
+            "movie_image_url": "https://images.fandango.com/ImageRenderer/400/0/redesign/static/img/default_poster.png/0/images/masterrepository/fandango/219390/KO%20-%20Final%20Poster.jpg"
+        }
+    },
+    {
+        "model": "whodunitapi.movie",
+        "pk": 6,
+        "fields": {
+            "name": "Clue",
+            "year": "1985",
+            "description": "Six guests are anonymously invited to a strange mansion for dinner, but after their host is killed, they must cooperate with the staff to identify the murderer as the bodies pile up",
+            "genre": 6,
+            "player": 2,
+            "number_of_players": 2,
+            "director": "Jonathan Lynn",
+            "rating": "PG",
+            "movie_image_url": "https://prodimage.images-bn.com/pimages/0032429256584_p0_v2_s550x406.jpg"
+        }
+    },
+    {
+        "model": "whodunitapi.movie",
+        "pk": 7,
+        "fields": {
+            "name": "Murder on the Orient Express",
+            "year": "1974",
+            "description": "In December 1935, when his train is stopped by deep snow, detective Hercule Poirot is called on to solve a murder that occurred in his car the night before.",
+            "genre": 6,
+            "player": 2,
+            "number_of_players": 2,
+            "director": "Sidney Lumet",
+            "rating": "PG",
+            "movie_image_url": "https://www.nordicposters.com/movie-poster/mordet_pa_orientexpressen_74.jpg"
+        }
+    },
+    {
+        "model": "whodunitapi.movie",
+        "pk": 8,
+        "fields": {
+            "name": "Scream",
+            "year": "1996",
+            "description": "A year after the murder of her mother, a teenage girl is terrorized by a new killer, who targets the girl and her friends by using horror films as part of a deadly game.",
+            "genre": 6,
+            "player": 1,
+            "number_of_players": 2,
+            "director": "Wes Craven",
+            "rating": "R",
+            "movie_image_url": "https://unfspinnaker.com/wp-content/uploads/2017/10/large_ewi7gYW22t8T3piRvrXO73GlzuL.jpg"
+        }
+    },
+    {
+        "model": "whodunitapi.movie",
+        "pk": 9,
+        "fields": {
+            "name": "The Nice Guys",
+            "year": "2016",
+            "description": "In 1970s Los Angeles, a mismatched pair of private eyes investigate a missing girl and the mysterious death of a porn star.",
+            "genre": 6,
+            "player": 1,
+            "number_of_players": 2,
+            "director": "Shane Black",
+            "rating": "R",
+            "movie_image_url": "https://m.media-amazon.com/images/M/MV5BODNlNmU4MGItMzQwZi00NGQyLWEyZWItYjFkNmI0NWI4NjBhXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg"
+        }
+    },
+    {
+        "model": "whodunitapi.movie",
+        "pk": 10,
+        "fields": {
+            "name": "Chinatown",
+            "year": "1974",
+            "description": "A private detective hired to expose an adulterer finds himself caught up in a web of deceit, corruption, and murder.",
+            "genre": 6,
+            "player": 1,
+            "number_of_players": 2,
+            "director": "Roman Polanski",
+            "rating": "R",
+            "movie_image_url": "https://resizing.flixster.com/1OGfgXtw5HyShng5QzUd-Og2Qfw=/ems.ZW1zLXByZC1hc3NldHMvbW92aWVzLzUyNTkwMDNiLWVjZGEtNDAxYy05MmIxLTU3OTM3OGEzZDdlMS53ZWJw"
+        }
+    },
+    {
+        "model": "whodunitapi.movie",
+        "pk": 11,
+        "fields": {
+            "name": "Gosford Park",
+            "year": "2001",
+            "description": "Set in the 1930s, this movie brings a group of pretentious rich and famous together for a weekend of relaxation at a hunting resort. But when a murder occurs, each one of these interesting characters becomes a suspect.",
+            "genre": 6,
+            "player": 1,
+            "number_of_players": 2,
+            "director": "Robert Altman",
+            "rating": "R",
+            "movie_image_url": "https://m.media-amazon.com/images/I/7105UT6X5lL._SL1230_.jpg"
+        }
+    },
+    {
+        "model": "whodunitapi.movie",
+        "pk": 12,
+        "fields": {
+            "name": "Zero Effect",
+            "year": "1998",
+            "description": "The world's greatest detective Daryl Zero aided by his associate Steve Arlo investigates a complex and mysterious case of blackmail and missing keys for shady tycoon Gregory Stark who is less than forthcoming about what is really happening!",
+            "genre": 6,
+            "player": 1,
+            "number_of_players": 2,
+            "director": "Jake Kasdan",
+            "rating": "R",
+            "movie_image_url": "https://m.media-amazon.com/images/M/MV5BMTU1NzkxMDM4NV5BMl5BanBnXkFtZTYwODY3OTQ5._V1_.jpg"
         }
     },
     {
@@ -203,7 +191,6 @@
             "number_of_players": 2,
             "director": "Guy Ritchie",
             "rating": "PG-13",
-            "suspect": 9,
             "movie_image_url": "https://m.media-amazon.com/images/M/MV5BMTg0NjEwNjUxM15BMl5BanBnXkFtZTcwMzk0MjQ5Mg@@._V1_.jpg"
         }
     },
@@ -219,7 +206,6 @@
             "number_of_players": 2,
             "director": "Rian Johnson",
             "rating": "R",
-            "suspect": 9,
             "movie_image_url": "http://www.hypnogoria.com/images/reviews/brick_DVD_cover.jpg"
         }
     },
@@ -235,7 +221,6 @@
             "number_of_players": 2,
             "director": "David Fincher",
             "rating": "R",
-            "suspect": 9,
             "movie_image_url": "https://m.media-amazon.com/images/M/MV5BMTczNDk4NTQ0OV5BMl5BanBnXkFtZTcwNDAxMDgxNw@@._V1_.jpg"
         }
     },
@@ -251,8 +236,7 @@
             "number_of_players": 2,
             "director": "David Fincher",
             "rating": "R",
-            "suspect": 9,
-            "movie_image_url": "https://www.imdb.com/title/tt2267998/mediaviewer/rm2766521344/?ref_=tt_ov_i"
+            "movie_image_url": "https://www.literarytraveler.com/wp-content/uploads/2015/01/Gone-Girl1.jpg"
         }
     },
     {
@@ -267,8 +251,7 @@
             "number_of_players": 2,
             "director": "Denis Villeneuve",
             "rating": "R",
-            "suspect": 9,
-            "movie_image_url": "https://www.imdb.com/title/tt1392214/mediaviewer/rm1033886464/?ref_=tt_ov_i"
+            "movie_image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Prisoners2013Poster.jpg/220px-Prisoners2013Poster.jpg"
         }
     },
     {
@@ -283,8 +266,7 @@
             "number_of_players": 2,
             "director": "James Mangold",
             "rating": "R",
-            "suspect": 9,
-            "movie_image_url": "https://www.imdb.com/title/tt0309698/mediaviewer/rm3443038208/?ref_=tt_ov_i"
+            "movie_image_url": "https://pbs.twimg.com/media/EZoBqAbXgAAXJi7.jpg"
         }
     },
     {
@@ -299,8 +281,7 @@
             "number_of_players": 2,
             "director": "Quentin Tarantino",
             "rating": "R",
-            "suspect": 9,
-            "movie_image_url": "https://www.imdb.com/title/tt3460252/mediaviewer/rm2736055040/?ref_=tt_ov_i"
+            "movie_image_url": "https://m.media-amazon.com/images/M/MV5BMjA1MTc1NTg5NV5BMl5BanBnXkFtZTgwOTM2MDEzNzE@._V1_.jpg"
         }
     },
     {
@@ -315,7 +296,6 @@
             "number_of_players": 2,
             "director": "Bryan Singer",
             "rating": "R",
-            "suspect": 9,
             "movie_image_url": "https://noirwhale.files.wordpress.com/2013/01/via-yengecvebaykus-tumblr.jpg?w=584"
         }
     },
@@ -331,7 +311,6 @@
             "number_of_players": 2,
             "director": "John Francis Daley & Jonathan Goldstein",
             "rating": "R",
-            "suspect": 9,
             "movie_image_url": "https://m.media-amazon.com/images/M/MV5BMjI3ODkzNDk5MF5BMl5BanBnXkFtZTgwNTEyNjY2NDM@._V1_.jpg"
         }
     },
@@ -347,7 +326,6 @@
             "number_of_players": 2,
             "director": "Steven Spielberg",
             "rating": "PG-13",
-            "suspect": 9,
             "movie_image_url": "https://m.media-amazon.com/images/M/MV5BZTI3YzZjZjEtMDdjOC00OWVjLTk0YmYtYzI2MGMwZjFiMzBlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
         }
     }
