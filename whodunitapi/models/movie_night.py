@@ -23,7 +23,7 @@ class MovieNight(models.Model):
 
     @property  # gets who joined
     def joined(self):
-        """Add the following custom property to event class.
+        """Add the following custom property to movie night class.
         """
         return self.__joined
 

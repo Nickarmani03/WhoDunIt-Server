@@ -13,6 +13,6 @@ class Player(models.Model):
     bio = models.CharField(max_length=50)
     profile_image_url= models.CharField(max_length=255)
 
-    def __str__(self):
-        return self.name + ": " + str(self.imagefile)
+    # def __str__(self):
+    #     return self.name + ": " + str(self.imagefile)
     

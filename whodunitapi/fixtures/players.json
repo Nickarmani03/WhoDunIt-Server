@@ -4,7 +4,7 @@
     "pk": 1,
     "fields": {
       "user": 1,
-      "bio": "Me",
+      "bio": "Reigning undefeated heavyweight movie night champion!! May will play me, all will loose.",
       "profile_image_url": "https://i.pinimg.com/474x/b1/92/4d/b1924dce177345b5485bb5490ab3441f.jpg"
       
     }
@@ -14,7 +14,7 @@
     "pk": 2,
     "fields": {
       "user": 2,
-      "bio": "Me",
+      "bio": "I'm the hero of a thousand stories. I'm a superhero, aMovie Night soldier. I've slain dragons and traveled through portals. I am a spartan, a commander. A king. I've saved a thousand worlds and countless more lives. What am I? I'm a WhoDunIt Master!!!",
       "profile_image_url": "https://sgame.dit.upm.es/pictures/16371.jpg?1619648546/"
       
     }

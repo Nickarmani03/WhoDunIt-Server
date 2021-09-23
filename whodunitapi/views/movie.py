@@ -37,7 +37,6 @@ class MovieView(ViewSet):
         # `genreId` in the body of the request.
         genre = Genre.objects.get(pk=request.data["genreId"])
         movie.genre = genre
-
         movie.movie_image_url = request.data["movieImageUrl"]
         
 
