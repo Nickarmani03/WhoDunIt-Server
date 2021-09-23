@@ -8,6 +8,7 @@ class Movie(models.Model):
         year (IntegerField): the year the movie debuted
         description (CharField): The description of the movie
         genre (ForeignKey): The type of genre of the movie
+        player (ForeignKey): the user that made the Movie
         number_of_players (IntegerField): The max number of players watching the movie
         director (CharField): The person that made the movie
         rating (CharField): the movies rating

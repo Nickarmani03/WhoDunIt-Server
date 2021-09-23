@@ -3,7 +3,7 @@
         "model": "whodunitapi.moviesuspect",
         "pk": 1,
         "fields": {
-            "creator": 1,
+            "player": 1,
             "movie_night": 1,
             "suspect": 1
         }
@@ -12,7 +12,7 @@
         "model": "whodunitapi.moviesuspect",
         "pk": 2,
         "fields": {
-            "creator": 1,
+            "player": 2,
             "movie_night": 2,
             "suspect": 9
         }

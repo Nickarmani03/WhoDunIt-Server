@@ -18,7 +18,7 @@ class MovieSuspectView(ViewSet):
 
         # Uses the token passed in the `Authorization` header
         player = Player.objects.get(user=request.auth.user)
-        
+
         movie_suspect = MovieSuspect()
         movie_suspect.player = player
         suspect = Suspect.objects.get(pk=request.data["suspectId"])
@@ -55,10 +55,13 @@ class MovieSuspectView(ViewSet):
         player = Player.objects.get(user=request.auth.user)
 
         movie_suspect = MovieSuspect().objects.get(pk=pk)
+
         suspect = Suspect.objects.get(pk=request.data["suspectId"])
         movie_suspect.suspect = suspect
+
         movie_night = MovieNight.objects.get(pk=request.data["movieNightId"])
         movie_suspect.movie_night = movie_night
+
         movie_night.player = player        
         movie_suspect.save()
 
@@ -127,6 +130,6 @@ class MovieSuspectSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = MovieSuspect
-        fields = ('id', 'creator','suspect', 'movie_night')
+        fields = ('id', 'player','suspect', 'movie_night')
         depth = 3
         

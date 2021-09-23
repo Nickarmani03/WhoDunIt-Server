@@ -20,14 +20,13 @@ class MovieNightView(ViewSet):
             Response -- JSON serialized movieNight instance
         """
         player = Player.objects.get(user=request.auth.user)
-
+        
         movie_night = MovieNight()
         movie_night.creator = player
         movie_night.title = request.data["title"]
         movie_night.date = request.data["date"]
         movie_night.time = request.data["time"]
-        movie_night.description = request.data["description"]    
-
+        movie_night.description = request.data["description"]
         movie = Movie.objects.get(pk=request.data["movie"])
         movie_night.movie = movie
 
