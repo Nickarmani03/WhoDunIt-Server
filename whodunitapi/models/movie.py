@@ -8,10 +8,10 @@ class Movie(models.Model):
         year (IntegerField): the year the movie debuted
         description (CharField): The description of the movie
         genre (ForeignKey): The type of genre of the movie
+        player (ForeignKey): the user that made the Movie
         number_of_players (IntegerField): The max number of players watching the movie
         director (CharField): The person that made the movie
         rating (CharField): the movies rating
-        # suspect (ForeignKey): the suspected criminal
         movie_image_url (CharField): for the user to upload an image.
     """
     name = models.CharField(max_length=100)
@@ -22,9 +22,5 @@ class Movie(models.Model):
     number_of_players = models.IntegerField()    
     director = models.CharField(max_length=50)
     rating = models.CharField(max_length=6)
-    # suspect = models.ForeignKey("Suspect", on_delete=models.CASCADE)
     movie_image_url = models.CharField(max_length=255)
     
-    # @property
-    # def movie_suspect(self):
-    #     suspect = Suspect.objects.filter(movie=self)

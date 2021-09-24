@@ -8,11 +8,11 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
 from whodunitapi.models import Movie, MovieNight, Player
-# from whodunitapi.views.movie import MovieSerializer
+
 
 
 class MovieNightView(ViewSet):
-    """WHODUNIT movieNights"""
+    """WHODUNIT MovieNights"""
 
     def create(self, request):
         """Handle POST operations for movie_nights
@@ -20,14 +20,13 @@ class MovieNightView(ViewSet):
             Response -- JSON serialized movieNight instance
         """
         player = Player.objects.get(user=request.auth.user)
-
+        
         movie_night = MovieNight()
         movie_night.creator = player
         movie_night.title = request.data["title"]
         movie_night.date = request.data["date"]
         movie_night.time = request.data["time"]
-        movie_night.description = request.data["description"]    
-
+        movie_night.description = request.data["description"]
         movie = Movie.objects.get(pk=request.data["movie"])
         movie_night.movie = movie
 

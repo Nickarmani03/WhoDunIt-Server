@@ -6,7 +6,7 @@
             "creator": 1,
             "movie": 1,
             "date": "2021-10-31",
-            "time": "6:00 PM",
+            "time": "18:00",
             "title": "Catch the Suspect for Kids",
             "description": "Theres a murderer in Toon town, can you catch the suspect?",
             "attendees": [1, 2]      
@@ -19,7 +19,7 @@
             "creator": 1,
             "movie": 2,
             "date": "2021-09-30",
-            "time": "6:00 PM",
+            "time": "18:00",
             "title": "Kids Night",
             "description": "Zootopia Movie Night & Discussion with your Kids and Families!",
             "attendees": [1, 2]

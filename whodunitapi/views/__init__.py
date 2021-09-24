@@ -6,4 +6,5 @@ from .movie_night import MovieNightView, MovieNightSerializer, MovieNight
 from .suspect import SuspectView, SuspectSerializer, Suspect
 from .profile import Profile
 from .landing import Landing
+from .movie_suspect import MovieSuspectView, MovieSuspectSerializer, MovieSuspect
 

@@ -18,13 +18,12 @@ class MovieNight(models.Model):
     time = models.TimeField()
     title = models.CharField(max_length=1000)
     description = models.TextField()
-    # suspect = models.ForeignKey("Suspect", on_delete=models.CASCADE)
     attendees = models.ManyToManyField("Player", through="NightPlayer", related_name="attending")
     # this is a list
 
     @property  # gets who joined
     def joined(self):
-        """Add the following custom property to event class.
+        """Add the following custom property to movie night class.
         """
         return self.__joined
 
